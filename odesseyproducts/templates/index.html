@@ -1,0 +1,50 @@
+{% extends 'odesseyproducts/templates/layout.html' %}
+
+{% block head %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/index.css' %}" type="text/css">
+<script src="{% static 'js/index.js'%} "></script>
+{% endblock %}
+
+{% block content %}
+
+<div class="starting-banner-desktop">
+    <figure class="starting-image" id="fig-1">
+        <a href="/products/electricblanket">
+            <img src="https://cdn.shopify.com/s/files/1/0599/3208/2332/files/kaiko-breeze-swimsuit-olive-anemone-1-web.jpg?v=1664356717&width=768"
+                class="banner-image">
+            <figcaption>Electric Blanket</figcaption>
+        </a>
+    </figure>
+
+    <figure class="starting-image" id="fig-2">
+        <a href="/products/electricblanket">
+            <img src="https://cdn.shopify.com/s/files/1/0599/3208/2332/files/kaiko-breeze-swimsuit-olive-anemone-1-web.jpg?v=1664356717&width=768"
+                class="banner-image">
+            <figcaption>Foot Warmer</figcaption>
+        </a>
+    </figure>
+
+    <figure class="starting-image" id="fig-3">
+        <a href="/products/electricblanket">
+            <img src="https://cdn.shopify.com/s/files/1/0599/3208/2332/files/kaiko-breeze-swimsuit-olive-anemone-1-web.jpg?v=1664356717&width=768"
+                class="banner-image">
+            <figcaption>Heating pad</figcaption>
+        </a>
+    </figure>
+</div>
+<div class = "splide">
+    <div class = "splide-header">
+        <h2> Electric Blanket</h2>
+        <div class = "splide-buttons">
+            <button class = "splide-button" onclick = "splide_slide_left('splide-1-left')" id = "splide-1-left" disabled>
+                <svg role="presentation" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left"><polyline points="15 18 9 12 15 6"></polyline></svg>
+            </button>
+            <button class = "splide-button" onclick = "splide_slide_right('splide-1-right')" id = "splide-1-right">
+                <svg role="presentation" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </button>
+        </div>
+    </div>
+
+</div>
+{% endblock %}
